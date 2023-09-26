@@ -3,7 +3,7 @@ function enviarImagem() {
     var formData = new FormData();
     formData.append("imagem", imagem);
 
-    fetch("http://localhost:5000/prever", {
+    fetch("https://api-nsfw.onrender.com/prever", {
         method: "POST",
         body: formData
     })
