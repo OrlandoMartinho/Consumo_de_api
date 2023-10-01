@@ -3,7 +3,7 @@ function enviarImagem() {
     var formData = new FormData();
     formData.append("imagem", imagem);
 
-    fetch("https://127.0.0.1:5000/prever", {
+    fetch("http://127.0.0.1:5000/prever", {
         method: "POST",
         body: formData
     })
